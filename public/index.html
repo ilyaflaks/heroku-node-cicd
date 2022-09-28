@@ -1,0 +1,25 @@
+<html>
+  <script src="./hello.js"></script>
+  <script>
+    var setColor = function () {
+      var col = [
+        "#34F6F2",
+        "#78E3FD",
+        "#D1F5FF",
+        "#EEF8FF",
+        "#7D53DE",
+        "#CBD2D0",
+        "#39A0ED",
+        "#13C4A3",
+      ];
+      var num = Math.floor(Math.random() * 8);
+      var s = `<body bgcolor=  ${col[num]} >`;
+      document.write(s);
+      document.write(`<h1 id="hello"> ${hello()} </h1>`);
+      document.write(
+        `<button onClick="window.location.reload();">Refresh Page</button>`
+      );
+    };
+    window.onload = setColor;
+  </script>
+</html>
