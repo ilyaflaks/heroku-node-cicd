@@ -12,6 +12,10 @@ app.get("/data", (req, res) => {
   res.send("Definitely nothing to see here");
 });
 
+app.get("/users", (req, res) => {
+  res.send("Wow such empty");
+});
+
 var port = process.env.PORT || 3000;
 app.listen(port, function () {
   console.log("Listening on port " + port);
