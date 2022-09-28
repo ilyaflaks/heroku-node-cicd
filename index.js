@@ -8,6 +8,10 @@ app.get("/about", (req, res) => {
   res.send("Not much to see here");
 });
 
+app.get("/data", (req, res) => {
+  res.send("Definitely nothing to see here");
+});
+
 var port = process.env.PORT || 3000;
 app.listen(port, function () {
   console.log("Listening on port " + port);
