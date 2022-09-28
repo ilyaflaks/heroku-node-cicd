@@ -9,7 +9,7 @@ it("Home page", async (done) => {
 });
 
 it("works", async (done) => {
-  expect(hello).toBeUndefined();
+  expect(hello).toBeTruthy();
   done();
 });
 
