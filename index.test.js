@@ -12,3 +12,7 @@ it("works", async (done) => {
   expect(hello).toBeTruthy();
   done();
 });
+
+afterAll(async (done) => {
+  done();
+});
